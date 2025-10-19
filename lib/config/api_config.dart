@@ -1,8 +1,12 @@
 /// API Keys and Configuration
 /// 
-/// IMPORTANT: Add your Gemini API key here
 /// Get it from: https://makersuite.google.com/app/apikey
 class ApiConfig {
+  // Get API key from environment variables
+  static const String geminiApiKey = String.fromEnvironment(
+    'GEMINI_API_KEY',
+    defaultValue: '', // Empty default - will use mock data if not set
+  );
   
   // Set to false to use mock data instead of real API
   static const bool useRealGeminiApi = true;
