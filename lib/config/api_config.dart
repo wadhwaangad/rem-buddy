@@ -1,12 +1,11 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 /// API Keys and Configuration
 /// 
 /// Get it from: https://makersuite.google.com/app/apikey
 class ApiConfig {
-  // Get API key from environment variables
-  static const String geminiApiKey = String.fromEnvironment(
-    'GEMINI_API_KEY',
-    defaultValue: '', // Empty default - will use mock data if not set
-  );
+  // Get API key from .env file
+  static String get geminiApiKey => dotenv.env['GEMINI_API_KEY'] ?? '';
   
   // Set to false to use mock data instead of real API
   static const bool useRealGeminiApi = true;

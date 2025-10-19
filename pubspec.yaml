@@ -38,6 +38,9 @@ dependencies:
   # HTTP & API
   http: ^1.2.0
   
+  # Environment variables
+  flutter_dotenv: ^5.1.0
+  
   # Permissions
   permission_handler: ^11.2.0
   
@@ -55,9 +58,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
+
   assets:
     - assets/images/
+    - .env
 
 flutter_launcher_icons:
   android: "launcher_icon"

@@ -58,25 +58,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           
           _buildSection(
             context,
-            title: 'Ring Camera',
-            icon: Icons.videocam_rounded,
-            children: [
-              _buildInfoTile(
-                context,
-                'Motion Detection',
-                'Active and monitoring',
-                Icons.sensors,
-                Theme.of(context).colorScheme.primary,
-              ),
-            ],
-          ).animate()
-            .fadeIn(delay: 200.ms, duration: 400.ms)
-            .slideY(begin: 0.2, end: 0, delay: 200.ms, duration: 400.ms),
-          
-          const SizedBox(height: 24),
-          
-          _buildSection(
-            context,
             title: 'AI Assistant',
             icon: Icons.psychology_rounded,
             children: [
@@ -89,8 +70,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ],
           ).animate()
-            .fadeIn(delay: 300.ms, duration: 400.ms)
-            .slideY(begin: 0.2, end: 0, delay: 300.ms, duration: 400.ms),
+            .fadeIn(delay: 200.ms, duration: 400.ms)
+            .slideY(begin: 0.2, end: 0, delay: 200.ms, duration: 400.ms),
           
           const SizedBox(height: 24),
           
@@ -151,7 +132,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               fontWeight: FontWeight.bold,
             ),
           ).animate()
-            .fadeIn(delay: 400.ms, duration: 400.ms),
+            .fadeIn(delay: 300.ms, duration: 400.ms),
           
           const SizedBox(height: 12),
           

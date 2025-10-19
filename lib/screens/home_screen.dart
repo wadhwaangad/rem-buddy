@@ -45,11 +45,9 @@ class HomeScreen extends StatelessWidget {
                       return const _AuthenticationRequiredState();
                     }
                     
-                    return Expanded(
-                      child: provider.allCalendarItems.isEmpty
+                    return provider.allCalendarItems.isEmpty
                         ? const _EmptyAllItemsState()
-                        : _UnifiedItemsList(provider: provider),
-                    );
+                        : _UnifiedItemsList(provider: provider);
                   },
                 ),
               ),

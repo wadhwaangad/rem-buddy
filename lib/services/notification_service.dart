@@ -100,7 +100,7 @@ class NotificationService {
     const androidDetails = AndroidNotificationDetails(
       'immediate_reminders',
       'Immediate Reminders',
-      channelDescription: 'Immediate reminders triggered by Ring camera',
+      channelDescription: 'Immediate reminders for urgent situations',
       importance: Importance.max,
       priority: Priority.high,
       styleInformation: BigTextStyleInformation(''),
